@@ -1,0 +1,241 @@
+{
+  "version": "2.1.0",
+  "runs": [
+    {
+      "tool": {
+        "driver": {
+          "name": "Glog.AI",
+          "organization": "Glog.AI",
+          "fullName": "Glog, Making software more secure",
+          "version": "1.0.0",
+          "semanticVersion": "1.0.0",
+          "informationUri": "https://www.glog.ai",
+          "rules": [
+            {
+              "id": "34b86181-e4e8-35d2-8cd3-840dd9ed1587",
+              "name": "resources.rules.python.sqlalchemy-execute-raw-query",
+              "shortDescription": {
+                "text": "Opengrep Finding: resources.rules.python.sqlalchemy-execute-raw-query"
+              },
+              "fullDescription": {
+                "text": "Avoiding SQL string concatenation: untrusted input concatinated with raw SQL query can result in SQL Injection. In order to execute raw query safely, prepared statement should be used. SQLAlchemy provides TextualSQL to easily used prepared statement with named parameters. For complexe SQL composition, use SQL Expression Languague or Schema Definition Language. In most cases, SQLAlchemy ORM will be a better option.\n"
+              },
+              "defaultConfiguration": {
+                "enabled": true,
+                "level": "error"
+              },
+              "help": {
+                "text": "Avoiding SQL string concatenation: untrusted input concatinated with raw SQL query can result in SQL Injection. In order to execute raw query safely, prepared statement should be used. SQLAlchemy provides TextualSQL to easily used prepared statement with named parameters. For complexe SQL composition, use SQL Expression Languague or Schema Definition Language. In most cases, SQLAlchemy ORM will be a better option.\n\n💎 Enable cross-file analysis and Pro rules for free at sg.run/pro",
+                "markdown": "Avoiding SQL string concatenation: untrusted input concatinated with raw SQL query can result in SQL Injection. In order to execute raw query safely, prepared statement should be used. SQLAlchemy provides TextualSQL to easily used prepared statement with named parameters. For complexe SQL composition, use SQL Expression Languague or Schema Definition Language. In most cases, SQLAlchemy ORM will be a better option.\n\n\n#### 💎 Enable cross-file analysis and Pro rules for free at <a href='https://sg.run/pro'>sg.run/pro</a>\n\n<b>References:</b>\n - [https://docs.sqlalchemy.org/en/14/core/tutorial.html#using-textual-sql](https://docs.sqlalchemy.org/en/14/core/tutorial.html#using-textual-sql)\n - [https://www.tutorialspoint.com/sqlalchemy/sqlalchemy_quick_guide.htm](https://www.tutorialspoint.com/sqlalchemy/sqlalchemy_quick_guide.htm)\n - [https://docs.sqlalchemy.org/en/14/core/tutorial.html#using-more-specific-text-with-table-expression-literal-column-and-expression-column](https://docs.sqlalchemy.org/en/14/core/tutorial.html#using-more-specific-text-with-table-expression-literal-column-and-expression-column)\n"
+              },
+              "properties": {
+                "precision": "very-high"
+              }
+            },
+            {
+              "id": "1a733afb-5228-3354-b212-819856d0e28e",
+              "name": "resources.rules.python.insecure-eval-use",
+              "shortDescription": {
+                "text": "Opengrep Finding: resources.rules.python.insecure-eval-use"
+              },
+              "fullDescription": {
+                "text": "The Python 'eval' function is not secure against maliciously constructed input"
+              },
+              "defaultConfiguration": {
+                "enabled": true,
+                "level": "warning"
+              },
+              "help": {
+                "text": "The Python 'eval' function is not secure against maliciously constructed input\n💎 Enable cross-file analysis and Pro rules for free at sg.run/pro",
+                "markdown": "The Python 'eval' function is not secure against maliciously constructed input\n\n#### 💎 Enable cross-file analysis and Pro rules for free at <a href='https://sg.run/pro'>sg.run/pro</a>"
+              },
+              "properties": {
+                "precision": "very-high"
+              }
+            },
+            {
+              "id": "9394692c-5f86-32c8-942f-e0a7ec9e7268",
+              "name": "resources.rules.python.python-dynamic-execution-eval",
+              "shortDescription": {
+                "text": "Opengrep Finding: resources.rules.python.python-dynamic-execution-eval"
+              },
+              "fullDescription": {
+                "text": "Dynamic execution using exec or eval."
+              },
+              "defaultConfiguration": {
+                "enabled": true,
+                "level": "error"
+              },
+              "help": {
+                "text": "Dynamic execution using exec or eval.\n💎 Enable cross-file analysis and Pro rules for free at sg.run/pro",
+                "markdown": "Dynamic execution using exec or eval.\n\n#### 💎 Enable cross-file analysis and Pro rules for free at <a href='https://sg.run/pro'>sg.run/pro</a>"
+              },
+              "properties": {
+                "precision": "very-high"
+              }
+            },
+            {
+              "id": "aff6abc6-ce60-39a9-af04-c6c42a7747f3",
+              "name": "python.sqlalchemy.security.sqlalchemy-execute-raw-query.sqlalchemy-execute-raw-query",
+              "shortDescription": {
+                "text": "Opengrep Finding: python.sqlalchemy.security.sqlalchemy-execute-raw-query.sqlalchemy-execute-raw-query"
+              },
+              "fullDescription": {
+                "text": "Avoiding SQL string concatenation: untrusted input concatenated with raw SQL query can result in SQL Injection. In order to execute raw query safely, prepared statement should be used. SQLAlchemy provides TextualSQL to easily used prepared statement with named parameters. For complex SQL composition, use SQL Expression Language or Schema Definition Language. In most cases, SQLAlchemy ORM will be a better option."
+              },
+              "defaultConfiguration": {
+                "enabled": true,
+                "level": "error"
+              },
+              "helpUri": "https://semgrep.dev/r/python.sqlalchemy.security.sqlalchemy-execute-raw-query.sqlalchemy-execute-raw-query",
+              "help": {
+                "text": "Avoiding SQL string concatenation: untrusted input concatenated with raw SQL query can result in SQL Injection. In order to execute raw query safely, prepared statement should be used. SQLAlchemy provides TextualSQL to easily used prepared statement with named parameters. For complex SQL composition, use SQL Expression Language or Schema Definition Language. In most cases, SQLAlchemy ORM will be a better option.\n💎 Enable cross-file analysis and Pro rules for free at sg.run/pro",
+                "markdown": "Avoiding SQL string concatenation: untrusted input concatenated with raw SQL query can result in SQL Injection. In order to execute raw query safely, prepared statement should be used. SQLAlchemy provides TextualSQL to easily used prepared statement with named parameters. For complex SQL composition, use SQL Expression Language or Schema Definition Language. In most cases, SQLAlchemy ORM will be a better option.\n\n#### 💎 Enable cross-file analysis and Pro rules for free at <a href='https://sg.run/pro'>sg.run/pro</a>\n\n<b>References:</b>\n - [Semgrep Rule](https://semgrep.dev/r/python.sqlalchemy.security.sqlalchemy-execute-raw-query.sqlalchemy-execute-raw-query)\n - [https://docs.sqlalchemy.org/en/14/core/tutorial.html#using-textual-sql](https://docs.sqlalchemy.org/en/14/core/tutorial.html#using-textual-sql)\n - [https://www.tutorialspoint.com/sqlalchemy/sqlalchemy_quick_guide.htm](https://www.tutorialspoint.com/sqlalchemy/sqlalchemy_quick_guide.htm)\n - [https://docs.sqlalchemy.org/en/14/core/tutorial.html#using-more-specific-text-with-table-expression-literal-column-and-expression-column](https://docs.sqlalchemy.org/en/14/core/tutorial.html#using-more-specific-text-with-table-expression-literal-column-and-expression-column)\n"
+              },
+              "properties": {
+                "precision": "very-high"
+              }
+            }
+          ],
+          "language": "en-US",
+          "contents": [
+            "localizedData",
+            "nonLocalizedData"
+          ],
+          "isComprehensive": false
+        }
+      },
+      "language": "en-US",
+      "results": [
+        {
+          "ruleId": "1a733afb-5228-3354-b212-819856d0e28e",
+          "kind": "fail",
+          "level": "warning",
+          "message": {
+            "text": "Detected the use of eval(). eval() can be dangerous if used to evaluate dynamic content. If this content can be input from outside the program, this may be a code injection vulnerability. Ensure evaluated content is not definable by external sources."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "vulnerable_codes/examples.py",
+                  "uriBaseId": "%SRCROOT%"
+                },
+                "region": {
+                  "startLine": 3,
+                  "startColumn": 16,
+                  "endLine": 3,
+                  "endColumn": 32,
+                  "snippet": {
+                    "text": "        return eval(expression)"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "matchBasedId/v1": "b267fb6533859eff39d57eda436321540b6820b697d482e16182c4d806a49a88c5e8233b1eb5e21361e960ecb423a0d628c0063ac9187c438ef499af39449368_0"
+          },
+          "properties": {}
+        },
+        {
+          "ruleId": "34b86181-e4e8-35d2-8cd3-840dd9ed1587",
+          "kind": "fail",
+          "level": "warning",
+          "message": {
+            "text": "Avoiding SQL string concatenation: untrusted input concatinated with raw SQL query can result in SQL Injection. In order to execute raw query safely, prepared statement should be used. SQLAlchemy provides TextualSQL to easily used prepared statement with named parameters. For complexe SQL composition, use SQL Expression Languague or Schema Definition Language. In most cases, SQLAlchemy ORM will be a better option.\n"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "vulnerable_codes/examples.py",
+                  "uriBaseId": "%SRCROOT%"
+                },
+                "region": {
+                  "startLine": 16,
+                  "startColumn": 5,
+                  "endLine": 17,
+                  "endColumn": 29,
+                  "snippet": {
+                    "text": "    query = \"SELECT * FROM users WHERE username = '%s'\" % username\n    return db.execute(query)"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "matchBasedId/v1": "a371e279fbebe0a694c641014ac55a359fab48e63acc909cb3b32157f12fcc03e0bb220d4c5f2f3a57cf1d475313b695c062908f8bbc9dcb1a573bfd39446445_0"
+          },
+          "properties": {}
+        },
+        {
+          "ruleId": "9394692c-5f86-32c8-942f-e0a7ec9e7268",
+          "kind": "fail",
+          "level": "warning",
+          "message": {
+            "text": "Dynamic execution using exec or eval."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "vulnerable_codes/examples.py",
+                  "uriBaseId": "%SRCROOT%"
+                },
+                "region": {
+                  "startLine": 3,
+                  "startColumn": 16,
+                  "endLine": 3,
+                  "endColumn": 20,
+                  "snippet": {
+                    "text": "        return eval(expression)"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "matchBasedId/v1": "4a87e0e056e123b25a992c4c34d57abaa07d0ae4b8c4b3e28815332c756120c46b8edd8641aecc038371773095680e3ceeb72ff79c4eddb0956b411171a5c146_0"
+          },
+          "properties": {}
+        },
+        {
+          "ruleId": "aff6abc6-ce60-39a9-af04-c6c42a7747f3",
+          "kind": "fail",
+          "level": "warning",
+          "message": {
+            "text": "Detected possible formatted SQL query. Use parameterized queries instead.\n"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "vulnerable_codes/examples.py",
+                  "uriBaseId": "%SRCROOT%"
+                },
+                "region": {
+                  "startLine": 17,
+                  "startColumn": 12,
+                  "endLine": 17,
+                  "endColumn": 29,
+                  "snippet": {
+                    "text": "    return db.execute(query)"
+                  }
+                }
+              }
+            }
+          ],
+          "fingerprints": {
+            "matchBasedId/v1": "92a9e53b186313217f6754d46b3919fcc5af75e3126a8470f36969143b3d4357b22404b3c2388d31bd06fea5be56718d3d37e6364a9a372f8382adfcb0d300a5_0"
+          },
+          "properties": {}
+        }
+      ],
+      "newlineSequences": [
+        "\r\n",
+        "\n"
+      ]
+    }
+  ]
+}
